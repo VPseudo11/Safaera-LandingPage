@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safaera - nigthlife</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo/safaera_logo.png" alt="disco logo safaera">
+            </div>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contactenos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="slideshow-principal">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div class="slideshow">
+                <img src="" alt="" id="img1">
+                <img src="" alt="" id="img2">
+            </div>
+            <div id="indicadores">
+            </div>
+        </section>
+
+        <script src="scripts/script.js"></script>
+
+        <section class="form">
+            <h3>Reservaciones</h3>
+            <form action="#">
+                <div class="dataForm">
+                    <label for="name">Nombres</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="dataForm">
+                    <label for="surname">Apellidos</label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+                <div class="dataForm">
+                    <label for="identificationCard">Cedula</label>
+                    <input type="text" name="identificationCard" id="identificationCard">
+                </div>
+                <div class="dataForm">
+                    <label for="reservationDate">Fecha de Reserva</label>
+                    <input type="date" name="reservationDate" id="reservationDate">
+                </div>
+                <div class="dataForm">
+                    <input type="submit" value="Reservar" id="submitReservation">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

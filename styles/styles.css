@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    color: #fff
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #060a0d;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    margin: 30px 0;
+    left: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container .logo {
+    width: 200px;
+    float: left;
+}
+
+.container .menu {
+    float: right;
+    line-height: 70px;
+}
+
+.container .menu a {
+    display: inline-block;
+    padding: 15px 10px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+}
+
+.container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding: 5px 10px;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    align-items: center; 
+}
+
+#slideshow-principal {
+    width: 600px;
+    height: 200px;
+    top: 30px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#progress-bar-container {
+    position: absolute;
+    height: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: rgba(228, 69, 69, 0.7);
+    border-radius: 0 3px 3px 0;
+    transition: width 0.8s;
+}
+
+#slideshow {
+    position: relative;
+    z-index: 998;
+    height: 600px;
+}
+
+.slideshow img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+#img2 {
+    left: 100%;
+}
+
+.active {
+    left: 0 !important;
+    transition: all 1s;
+}
+
+#indicadores {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.circles {
+    border: white 2px solid;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 3px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.highlighted {
+    background-color: rgba(228, 69, 69, 1);
+    transition: background-color .8s;
+}
+
+.form {
+    position: relative;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+.form h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.form .dataForm input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 1em 0;
+}
+
+.form .dataForm input[type="submit"]{
+    margin: 30px auto;
+    width: 150px;
+    background: #0099ff;
+    color: #ff0066;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity .3s ease;
+}
+
+.form .dataForm input[type="submit"]:hover{
+    opacity: 1;
+}
